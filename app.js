@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+//設定動態路由
 app.get('/:page', (req, res) => {
   const pageName = req.params.page
   res.render('index', { pageName })
